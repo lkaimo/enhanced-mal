@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Enhanced MyAnimeList</title>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF4D8D"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#g)"/>
+  <g fill="#F1F1F5" fill-rule="evenodd">
+    <!-- M -->
+    <path d="M4 44V20H10.5L14 31L17.5 20H24V44H18.5V31L15.5 40H12.5L9.5 31V44Z"/>
+    <!-- A (with small counter) -->
+    <path d="M26 44L31.5 20H38.5L44 44H38.2L37.2 39.5H32.8L31.8 44ZM35 28L33.4 34H36.6Z"/>
+    <!-- L -->
+    <path d="M46 20H52V38H60V44H46Z"/>
+  </g>
+</svg>

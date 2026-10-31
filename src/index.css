@@ -1,0 +1,20 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+:root {
+  color-scheme: dark;
+  --color-background: #0B0B14; --color-surface: #14141F;
+  --color-primary: #FF4D8D; --color-secondary: #A855F7; --color-tertiary: #60A5FA;
+  --color-text-primary: #F1F1F5; --color-text-secondary: #A1A1B5;
+  --color-border: rgb(255 255 255 / 0.08);
+
+  /* Same palette as space-separated RGB channels, used by Tailwind so opacity modifiers work. Keep in sync with the hex values above. */
+  --rgb-background: 11 11 20;      /* #0B0B14 */
+  --rgb-surface: 20 20 31;         /* #14141F */
+  --rgb-primary: 255 77 141;       /* #FF4D8D */
+  --rgb-secondary: 168 85 247;     /* #A855F7 */
+  --rgb-tertiary: 96 165 250;      /* #60A5FA */
+  --rgb-text-primary: 241 241 245; /* #F1F1F5 */
+  --rgb-text-secondary: 161 161 181; /* #A1A1B5 */
+}
+body { @apply bg-background text-ink font-sans antialiased; }
+:focus-visible { outline: 2px solid var(--color-tertiary); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }

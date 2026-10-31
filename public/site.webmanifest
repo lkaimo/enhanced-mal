@@ -1,0 +1,13 @@
+{
+  "name": "Enhanced MyAnimeList",
+  "short_name": "Enhanced MAL",
+  "description": "Track anime, manga, manhwa and manhua with your MyAnimeList account.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B0B14",
+  "theme_color": "#0B0B14",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
