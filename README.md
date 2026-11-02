@@ -80,6 +80,7 @@ A modern, dark-themed tracker for **anime, manga, manhwa and manhua** that syncs
 
 **Data and hosting**
 - [MyAnimeList API v2](https://myanimelist.net/apiconfig/references/api/v2) for catalog data and list sync
+- [AniList API](https://docs.anilist.co) (public, no key) to show a title's original work, such as the manga an anime was adapted from
 - [Vercel](https://vercel.com) for hosting the frontend
 
 ---
