@@ -2,8 +2,8 @@ import { supabase } from './supabase'
 import type { MediaType } from './mal'
 
 const FIELDS: Record<MediaType, string> = {
-  anime: 'id,title,main_picture,alternative_titles,start_date,end_date,synopsis,mean,rank,popularity,media_type,status,genres,num_episodes,related_anime,recommendations',
-  manga: 'id,title,main_picture,alternative_titles,start_date,end_date,synopsis,mean,rank,popularity,media_type,status,genres,num_chapters,num_volumes,authors{first_name,last_name},related_manga,recommendations'
+  anime: 'id,title,main_picture,alternative_titles,start_date,end_date,synopsis,mean,rank,popularity,media_type,status,genres,num_episodes,source,related_anime,related_manga,recommendations',
+  manga: 'id,title,main_picture,alternative_titles,start_date,end_date,synopsis,mean,rank,popularity,media_type,status,genres,num_chapters,num_volumes,authors{first_name,last_name},related_manga,related_anime,recommendations'
 }
 export async function getDetail(type: MediaType, id: number): Promise<any> {
   const { data, error } = await supabase.functions.invoke('mal-proxy', { body: { path: `/${type}/${id}`, params: { fields: FIELDS[type] } } })
